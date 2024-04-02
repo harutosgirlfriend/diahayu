@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beranda</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+        *{  margin: none;
+            padding: 0;
+            border: 0;
+            color: rgb(245, 247, 248);
+            outline: none;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+           
+        }
+        body{
+        align-items: center;
+        width: 900px;
+        background-image: url(beranda.jpeg);
+        background-size: cover;
+        backdrop-filter: blur(5px);
+    }
+    li{ margin-top:20px}
+    .logout{
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+
+    }
+    .sidebar{
+        
+        position: sticky;
+        width: 110px;
+        height: 100vh;
+        padding: 0 1.7rem;
+        color: wheat;
+        overflow: hidden;
+        transition: all 0.5s linear;
+        background: palevioletred; 
+    }
+    .sidebar:hover{
+        width: 240px;
+        transition: 0.5s;
+    }
+    .head{
+       
+        display: flex;
+        padding: 5px;
+        height: 80px;
+        width: 1300px;
+        background: rgb(185, 153, 158);
+        border-radius: 10px;
+        align-items: center;
+    }
+    .head a{
+        text-decoration: none;
+        outline: none;
+    }
+    .menu{
+        height: 88%;
+        position: relative;
+        list-style: none;
+        padding: 0;
+    }
+    .menu li{
+        padding: 1rem;
+        margin: 8px 0;
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menu li:hover,.beranda{
+        background: rgb(185, 153, 158);
+    }
+    .menu a{
+        overflow: hidden;
+        color: aliceblue;
+        font-size: 14px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .menu a span{
+        overflow: hidden;
+
+    }
+    .menu a i {
+        font-size: 1.2rem;
+    }
+    .pencari{
+        color: aliceblue;
+        padding: 5px;
+        margin-left: 400px;
+        display: flex;
+        width: 500px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 40px;
+
+    }
+    
+    input{
+        color: aliceblue;
+        width: 470px;
+        background: transparent;
+    }
+    .keranjang{
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        
+    }
+    .keranjang:hover{
+       transition: 0.4s;
+        width: 50px;
+        background: rgb(230, 161, 184);
+        margin-bottom: 10px;
+    }
+    
+    .pesan{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        
+    }
+    .pesan:hover{
+        transition: 0.4s;
+        width: 50px;
+        background: rgb(230, 161, 184);
+        margin-bottom: 10px;
+
+    }
+    .profil{
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        padding-left: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        
+    }
+    .profil:hover{
+        transition: 0.4s;
+        width: 50px;
+        background: rgb(230, 161, 184);
+        margin-bottom: 10px;
+
+    }
+    .pencari:hover{
+        border-radius: 8px;
+        height: 50px;
+
+    }
+
+    #aboutus{
+        
+        width: 900px;
+        height: 300px;
+        margin: 20px;
+       font-style: indie flower;
+    }
+   #kritik{
+    margin-left: 800px;
+    width: 800px;
+    margin-bottom: 90px;
+   }
+  
+#histori{
+    width: 900px;
+    
+}
+  p{color: rgb(70, 69, 67);} 
+  h1{color: rgb(58, 57, 57);}
+   </style>
+    
+</head>
+<body>
+    <div class="head">
+<h1> Anncimall</h1>
+
+    <div class="pencari">
+        <form >
+        <input type="text" placeholder="apa yang anda butuhkan hari ini" >    
+        </form>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        
+        </div>
+        <div class="keranjang">
+            <i class="fa-solid fa-cart-shopping" title="keranjang"></i>
+    
+        </div>
+    
+        <div class="pesan" >
+            <i class="fa-solid fa-message" title="pesan"></i>
+    
+        </div>
+        <div class="profil" >
+            <i class="fa-solid fa-user" title="profil"></i>
+    
+        
+</div>
+
+    </div>
+    <table>
+        <tr>
+            <td>
+                <div class="sidebar">
+        
+                    <ul class="menu">
+                       
+                        <li class="beranda">
+                            <a href="beranda.html">
+                                <i class="fa-solid fa-gauge-high"></i>
+                                <span>Beranda</span>
+                            </a>
+                            
+                        </li>
+                        <li class="baju">
+                            <a href="baju.html">
+                                <i class="fa-solid fa-shirt"></i>
+                                <span>Baju</span>
+                            </a>
+                            
+                        </li>
+                        <li >
+                            <a href="sepatu.html">
+                                <i class="fa-solid fa-shoe-prints"></i>
+                                <span> Sepatu</span>
+                            </a>
+                            
+                        </li>
+                        <li class="tas">
+                            <a href="tas.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>Tas</span>
+                            </a>
+                            
+                        </li>
+                        <li class="topi">
+                            <a href="topi.html">
+                                <i class="fa-brands fa-redhat"></i>
+                                <span>Topi</span>
+                            </a>
+                            
+                        </li>
+                        <li class="logout">
+                            <a href="form.html">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>logout</span>
+                            </a>
+                            <li><a href="beranda.html#histori">our history</a></li>
+                            <li class="about"><a href="beranda.html#aboutus">about us</a></li>
+                            <li><a href="beranda.html#kritik"> kritik</a></li>      
+                                 
+                                   
+                        </li></div>
+                    </ul>
+                    
+                    
+                    
+                </div>
+            </td>
+            <td>
+                
+            <div id="aboutus">
+                <h1>about us</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat assumenda sequi autem quidem nesciunt praesentium perspiciatis officiis id adipisci deserunt ab ut, eum cumque consequatur ipsam quod ducimus inventore maxime!</p>
+            </div>
+
+            <div id="kritik">
+                <h1>criticism and suggestions</h1>
+                <p>
+                    click here for email:
+                    <a href= "mailto:dyahayuetikawati@gmail.com"> email</a></br>
+                    click here for Instagram:
+                    <a href= "https://www.instagram.com/_milkywaies?igsh=MWFmamFta21scXUyag=="> Instagram</a>
+                </p>
+              
+            </div>
+            
+            <div id="histori">
+                <h1>our history</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ullam voluptatibus magnam atque corrupti repudiandae explicabo nesciunt fugit dicta. Dignissimos facilis unde repellendus blanditiis. Fugiat corporis aut veritatis tempora velit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam molestias cupiditate nam quisquam, quia doloremque fugit voluptate eius tempore officiis veritatis dignissimos obcaecati, architecto nesciunt temporibus ipsum veniam alias consequatur!
+                </p>
+                
+            </div>
+           
+        </tr>
+    </table>
+    
+    
+  
+</body>
+</html>

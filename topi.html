@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beranda</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+        *{  margin: none;
+            padding: 0;
+            border: 0;
+            color: rgb(245, 247, 248);
+            outline: none;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+           
+        }
+        body{
+        align-items: center;
+        width: 900px;
+        background-image: url(beranda.jpeg);
+        background-size: cover;
+        backdrop-filter: blur(5px);
+    }
+    li{ margin-top:20px}
+    .logout{
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+
+    }
+    .sidebar{
+        
+        position: sticky;
+        width: 110px;
+        height: 100vh;
+        padding: 0 1.7rem;
+        color: wheat;
+        overflow: hidden;
+        transition: all 0.5s linear;
+        background: palevioletred; 
+    }
+    .sidebar:hover{
+        width: 240px;
+        transition: 0.5s;
+    }
+    .head{
+        display: flex;
+        padding: 5px;
+        height: 80px;
+        width: 1300px;
+        background: rgb(185, 153, 158);
+        border-radius: 10px;
+        align-items: center;
+    }
+    .menu{
+        height: 88%;
+        position: relative;
+        list-style: none;
+        padding: 0;
+    }
+    .menu li{
+        padding: 1rem;
+        margin: 8px 0;
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menu li:hover,.topi{
+        background: rgb(185, 153, 158);
+    }
+    .menu a{
+        color: aliceblue;
+        font-size: 14px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .menu a span{
+        overflow: hidden;
+
+    }
+    .menu a i {
+        font-size: 1.2rem;
+    }
+    .pencari{
+        color: aliceblue;
+        padding: 5px;
+        margin-left: 400px;
+        display: flex;
+        width: 500px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 40px;
+
+    }
+    
+    input{
+        color: aliceblue;
+        width: 470px;
+        background: transparent;
+    }
+    .keranjang{
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        
+    }
+    .keranjang:hover{
+       transition: 0.4s;
+        width: 50px;
+        background: rgb(230, 161, 184);
+        margin-bottom: 10px;
+    }
+    
+    .pesan{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        
+    }
+    .pesan:hover{
+        transition: 0.4s;
+        width: 50px;
+        background: rgb(230, 161, 184);
+        margin-bottom: 10px;
+
+    }
+    .profil{
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        padding-left: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        
+    }
+    .profil:hover{
+        transition: 0.4s;
+        width: 50px;
+        background: rgb(230, 161, 184);
+        margin-bottom: 10px;
+
+    }
+    .pencari:hover{
+        border-radius: 8px;
+        height: 50px;
+
+    }
+    .samping{
+      padding-top: 50px;
+      padding-left: 20px;
+      display: flex;
+      width: 1200px;
+      height: 100vh;
+      backdrop-filter: blur(20px);
+      background: transparent;
+     
+      
+    }
+    
+    .satu{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+    .dua{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+    .tiga{
+        width :200px;
+        height: 250px;
+        margin :20px;
+        overflow: hidden;
+    }
+    .empat{
+        width :200px;
+        height: 250px;
+        margin:20px;
+        overflow:hidden;
+    }
+    .satu:hover,.dua:hover,.tiga:hover,.empat:hover{
+        margin-top: 5px;
+       
+    }
+   
+    </style>
+    
+</head>
+<body>
+    <div class="head">
+<h1> Anncimall</h1>
+
+    <div class="pencari">
+        <form >
+        <input type="text" placeholder="apa yang anda butuhkan hari ini" >    
+        </form>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        
+        </div>
+        <div class="keranjang">
+            <i class="fa-solid fa-cart-shopping" title="keranjang"></i>
+    
+        </div>
+    
+        <div class="pesan" >
+            <i class="fa-solid fa-message" title="pesan"></i>
+    
+        </div>
+        <div class="profil" >
+            <i class="fa-solid fa-user" title="profil"></i>
+    
+        
+</div>
+
+    </div>
+    <table>
+        <tr>
+            <td>
+                <div class="sidebar">
+        
+                    <ul class="menu">
+                       
+                        <li class="beranda">
+                            <a href="beranda.html">
+                                <i class="fa-solid fa-gauge-high"></i>
+                                <span>Beranda</span>
+                            </a>
+                            
+                        </li>
+                        <li class="baju">
+                            <a href="baju.html">
+                                <i class="fa-solid fa-shirt"></i>
+                                <span>Baju</span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="sepatu.html">
+                                <i class="fa-solid fa-shoe-prints"></i>
+                                <span> Sepatu</span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="tas.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>Tas</span>
+                            </a>
+                            
+                        </li>
+                        <li class="topi">
+                            <a href="topi.html">
+                                <i class="fa-brands fa-redhat"></i>
+                                <span>Topi</span>
+                            </a>
+                            
+                        </li>
+                        <li class="logout">
+                            <a href="form.html">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>logout</span>
+                            </a>
+                            
+                        </li></div>
+                    </ul>
+                    
+                    
+                    
+                </div>
+            </td>
+            <td>
+                <div class="samping">
+                    <div class="satu">
+                       <a href="https://tokopedia.link/Nsodi4IpnIb"><img src="1.jpeg" alt="topi anti panas" height="200px"></a> 
+                        <p> topi wanita model korea</p>
+                    </div>
+                    <div class="dua">
+                        <a href="https://tokopedia.link/mX825bLpnIb"> 
+                            <img src="2.jpeg" alt="topi pria" height="200px">
+                            
+                        </a>
+                        <p>Baseball cap</p>
+                    </div>
+                    <div class="tiga">
+                        <a href="https://tokopedia.link/N46OXnTpnIb">
+                            <img src="3.jpeg" alt="basebal cap:NY" height="200px" overflow="hidden">
+                        </a>
+                        <p> Baseball cap: NY</p>
+                    </div>
+                    <div class="empat">
+                        <a href="https://tokopedia.link/26SrD65pnIb">
+                            <img src="4.jpeg" alt="topi gunung" height="200px" overflow="hidden">
+                        </a>
+                        <p> topi gunung</p>
+                    </div>
+                </div>
+            </td>
+           
+        </tr>
+    </table>
+    
+    
+  
+</body>
+</html>
